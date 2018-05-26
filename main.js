@@ -1,10 +1,10 @@
-const socket =io('https://stream2018.herokuapp.com/');
+const socket =io('add server app url here');
 
 $('#div-chat').hide();
 
 
 
-socket.on('DANH_SACH_ONLINE', arrUserInfo => {
+socket.on('User Online', arrUserInfo => {
     $('#div-chat').show();
     $('#div-dang-ky').hide();
 
@@ -13,17 +13,17 @@ socket.on('DANH_SACH_ONLINE', arrUserInfo => {
         $('#ulUser').append(`<li id="${peerId}">${ten}</li>`);
     });
 
-    socket.on('CO_NGUOI_DUNG_MOI', user => {
+    socket.on('New User', user => {
         const { ten, peerId } = user;
         $('#ulUser').append(`<li id="${peerId}">${ten}</li>`);
     });
 
-    socket.on('AI_DO_NGAT_KET_NOI', peerId => {
+    socket.on('User calling', peerId => {
         $(`#${peerId}`).remove();
     });
 });
 
-socket.on('REGISTRATION', () => alert('Vui long chon username khac!'));
+socket.on('REGISTRATION', () => alert('Name already exist!'));
 
 
 function openStream() {
@@ -42,7 +42,7 @@ function playStream(idVideoTag, stream) {
 
 const peer = new Peer({ 
     key: 'peerjs', 
-    host: 'mypeer2018.herokuapp.com', 
+    host: 'add peerjs app url here', 
     secure: true, 
     port: 443
 });
@@ -51,7 +51,7 @@ peer.on('open', id => {
     $('#my-peer').append(id);
     $('#btnSignUp').click(() => {
         const username = $('#txtUsername').val();
-        socket.emit('NGUOI_DUNG_DANG_KY', { ten: username, peerId: id });
+        socket.emit('Register', { ten: username, peerId: id });
     });
 });
 
