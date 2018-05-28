@@ -1,4 +1,4 @@
-# WebRTC
+# WebRTC-Peerjs-Socket.IO
 
 ## Specific Requirements:
 1. Install NodeJS and NPM
