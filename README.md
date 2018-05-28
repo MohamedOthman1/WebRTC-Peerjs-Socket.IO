@@ -18,7 +18,7 @@
 5. Deploy the server in the app you created  (https://devcenter.heroku.com/articles/git)
 6. Add your server app url in mainjs file
 
-## Deploy WebRTC on Heroku:
+## Deploy WebRTC Project on Heroku:
 1. Open project directory
 2. Create heroku app
 3. Deploy your webrtc project 
