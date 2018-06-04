@@ -1,5 +1,7 @@
 # WebRTC-Peerjs-Socket.IO
 
+![maxresdefault](https://user-images.githubusercontent.com/35007892/40925132-a4866416-6821-11e8-9c65-a622aac676fe.jpg)
+
 ## Specific Requirements:
 1. Install NodeJS and NPM
 2. Install Git 
