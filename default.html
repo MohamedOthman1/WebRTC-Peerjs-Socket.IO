@@ -1,150 +1,206 @@
+<!-- 
+	This Website is designed & Developed by Mohamed Ali Othman
+-->
+
+<style>
+	input[type=text],
+	select {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+	}
+
+	button[type=submit] {
+		width: 100%;
+		background-color: rgb(76, 76, 74);
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	button[type=submit]:hover {
+		background-color: #4CAF50;
+	}
+
+	div[id=divstyle] {
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	}
+
+	.button {
+		font-size: 18px;
+		text-align: center;
+		cursor: pointer;
+		outline: none;
+		color: #fff;
+		background-color: rgb(76, 76, 74);
+		border: none;
+		border-radius: 15px;
+		box-shadow: 0 9px #999;
+		display: inline;
+	}
+
+	.button:hover {
+		background-color: rgb(76, 76, 74)
+	}
+
+	.button:active {
+		background-color: rgb(76, 76, 74);
+		box-shadow: 0 5px #666;
+		transform: translateY(4px);
+	}
+</style>
+
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Adam Chan</title>
-    <style type="text/css">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-        @-webkit-keyframes rotate{
-        from{-webkit-transform:rotate(0deg)}
-        to{-webkit-transform:rotate(360deg)}
-        }
-        @-webkit-keyframes rotate1{
-            from{-webkit-transform:rotate(0deg)}
-            to{-webkit-transform:rotate(-360deg)}
-        }
 
-        body{
-            margin: 0;
-            padding: 0;
-            color: white;
-            text-align: center;
-            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7fbfc+0,add9e4+74,add9e4+77 */
-            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+0,c8d7dc+100 */
-            background: #f2f5f6; /* Old browsers */
-            background: -moz-radial-gradient(center, ellipse cover,  #f2f5f6 0%, #c8d7dc 100%); /* FF3.6+ */
-            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f2f5f6), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
-            background: -webkit-radial-gradient(center, ellipse cover,  #f2f5f6 0%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
-            background: -o-radial-gradient(center, ellipse cover,  #f2f5f6 0%,#c8d7dc 100%); /* Opera 12+ */
-            background: -ms-radial-gradient(center, ellipse cover,  #f2f5f6 0%,#c8d7dc 100%); /* IE10+ */
-            background: radial-gradient(ellipse at center,  #f2f5f6 0%,#c8d7dc 100%); /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-        }
-        #div{
-            position: absolute;
-            bottom: 100px;
-            left: 130px;
-            width: 200px;
-            height: 200px;
-            /*-webkit-transition: -webkit-transform 20s linear;*/
-            /*-moz-transition: -moz-transform 20s linear;*/
-            /*-o-transition: -o-transform 20s linear;*/
-            /*-ms-transition: -ms-transform 20s linear;*/
-            /*-webkit-animation:rotate 9.5s linear 0s normal none infinite;*/
-        }
-        #div1{
-            position: absolute;
-            bottom:0;
-            left: 0;
-            width: 250px;
-            height: 250px;
-            /*-webkit-transition: -webkit-transform 2000s linear;*/
-            /*-moz-transition: -moz-transform 2000000s linear;*/
-            /*-o-transition: -o-transform 2000000s linear;*/
-            /*-ms-transition: -ms-transform 200000s linear;*/
-            /*-webkit-animation:rotate1 9.5s linear 0s normal none infinite;*/
-        }
-        .lunzi_1{
-            position: absolute;
-            top: 0;
-            left: 200px;
-            -webkit-animation:rotate 9.5s linear 0s normal none infinite;
-        }
-        .lunzi_2{
-            position: absolute;
-            top: 28px;
-            left: 365px;
-            -webkit-animation:rotate1 9.5s linear 0s normal none infinite;
-        }
-        .lunzi_3{
-            position: absolute;
-            top: 140px;
-            left: 445px;
-            -webkit-animation:rotate 9.5s linear 0s normal none infinite;
-        }
-        .lunzi_4{
-            position: absolute;
-            top: 115px;
-            left: 530px;
-            -webkit-animation:rotate1 9.5s linear 0s normal none infinite;
-        }
-        .lunzi_5{
-            position: absolute;
-            top: 0;
-            left: 630px;
-            -webkit-animation:rotate 9.5s linear 0s normal none infinite;
-        }
-        .lunzi_6{
-            position: absolute;
-            top: 28px;
-            left: 795px;
-            -webkit-animation:rotate1 9.5s linear 0s normal none infinite;
-        }
-        .lunzi_7{
-            position: absolute;
-            top: 140px;
-            left: 865px;
-            -webkit-animation:rotate 9.5s linear 0s normal none infinite;
-        }
-        .lunzi_8{
-            position: absolute;
-            top: 115px;
-            left: 950px;
-            -webkit-animation:rotate1 9.5s linear 0s normal none infinite;
-        }
-		.footer{
-			width:100%;
-			text-align:center;
-			margin-top:40px;
-		}
-		.footer a{
-			color:black;
-			text-decoration:none;
-		}
-    </style>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="socket.io.js"></script>
+	<title>@ WebRTC: Chat Room</title>
+	<!-- BOOTSTRAP STYLES-->
+	<link href="css/bootstrap.css" rel="stylesheet" />
+	<!-- FONTAWESOME STYLES-->
+	<link href="css/font-awesome.css" rel="stylesheet" />
+	<!-- CUSTOM STYLES-->
+	<link href="css/custom.css" rel="stylesheet" />
+	<!-- GOOGLE FONTS-->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
+
 <body>
-	<div class="part">
-		<div class="lunzi_1">
-			<img src="images/lunzi_1.png">
+	<div id="wrapper">
+		<nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index2.html"><img class="images" src="images/img.png"></a>
+			</div>
+		</nav>
+		<!-- /. NAV TOP  -->
+		<nav class="navbar-default navbar-side" role="navigation">
+			<div class="sidebar-collapse">
+				<ul class="nav" id="main-menu">
+					<li>
+						<a href="index1.html"><i class="fa fa-video-camera  fa-3x"></i>Video Call</a>
+					</li>
+					<li>
+						<a href="default.html" class="active-menu" ><i class="fa fa-comments  fa-3x"></i>Chat</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</nav>
+		<!-- /. NAV SIDE  -->
+		<div id="page-wrapper">
+			<div id="page-inner">
+				<div class="row">
+					<div class="col-md-12">
+
+						<h2>Chat Room</h2>
+						<h5 style='text-transform:uppercase'>Welcome , Love to see you back. </h5>
+
+					</div>
+				</div>
+				<!-- /. ROW  -->
+				<hr />
+				<div>
+
+				</div>
+				<div class="container">
+					<div id="userArea" class="row">
+						<div class="col-md-12">
+							<form id="user">
+								<div class="form-group">
+									<input class="form-control" id="username" placeholder="Enter your username"
+										style="max-width:950px;" />
+										<span id="error-message" style="color: #ff0000;"></span>
+									<br />
+									<br />
+									<input type="submit" style="background-color:rgb(76, 76, 74);"
+										class="btn btn-primary" value="Log in" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row" id="msgArea">
+						<div class="col-md-4">
+							<div class="single category">
+								<h3 class="side-title">Onliner Users</h3>
+								<ul class="list-unstyled" id="users">
+								</ul>
+							</div>
+						</div>
+						<br />
+						<div class="col-md-12">
+							<div class="container">
+							<div class="chat" id="chat">
+								<form id="From">
+									<div class="form-group">
+										<label>Enter Message</label>
+										<br />
+										<textarea class="form-control" id="message"
+											style="max-width:950px;height: 200px;"></textarea>
+										<br />
+										<input type="submit" class="btn btn-primary" value="Send Message"
+											style="background-color:rgb(76, 76, 74);" />
+										<br/>
+										<br/>
+										<section id="feedback"></section>
+									</div>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
 		</div>
-		<div class="lunzi_2">
-			<img src="images/lunzi_2.png">
-		</div>
-		<div class="lunzi_3">
-			<img src="images/lunzi_3.png">
-		</div>
-		<div class="lunzi_4">
-			<img src="images/lunzi_4.png">
-		</div>
-		<div class="lunzi_5">
-			<img src="images/lunzi_1.png">
-		</div>
-		<div class="lunzi_6">
-			<img src="images/lunzi_2.png">
-		</div>
-		<div class="lunzi_7">
-			<img src="images/lunzi_3.png">
-		</div>
-		<div class="lunzi_8">
-			<img src="images/lunzi_4.png">
-		</div>
+		<!-- /. PAGE INNER  -->
 	</div>
-    <p style="font-size: 60px;color: black;margin-top: 300px;"></p>
-    <div style="width: 70%;height: 300px;text-align: center;margin-left:auto;margin-right:auto;background: url('images/under.png') no-repeat center center;background-size: cover">
-    </div>
-	<div class="footer">
+	<!-- /. PAGE WRAPPER  -->
 	</div>
+	<!-- /. WRAPPER  -->
+	<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+	<!-- JQUERY SCRIPTS -->
+	<script src="js/jquery-1.10.2.js"></script>
+	<!-- BOOTSTRAP SCRIPTS -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- METISMENU SCRIPTS -->
+	<script src="js/jquery.metisMenu.js"></script>
+	<script src="server.js"></script>
+
 </body>
 </html>
+<style>
+	#msgArea {
+		display: none;
+	}
+	.fa-circle {
+		color: #00FF00;
+	}
+</style>
